@@ -4,7 +4,7 @@ input.onButtonPressed(Button.B, () => {
     for (let i = 0; yes === true; i++) {
         let beer = randint(0, 4)
         let andsteal = randint(0,4)
-        if (!(andsteal == 1 || beer == 2)) {
+        if (andsteal == 0 && andsteal == 4) {
             led.plot(beer, andsteal)
         }
     }
